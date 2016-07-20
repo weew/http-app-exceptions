@@ -13,7 +13,7 @@ class ValidationExceptionTest extends PHPUnit_Framework_TestCase {
         $result = new ValidationResult();
         $ex = new ValidationException($result);
         $this->assertTrue($result === $ex->getValidationResult());
-        $response = $ex->getHttpResponse();
+        $response = $ex->toHttpResponse();
         $this->assertTrue($response instanceof IHttpResponse);
         $this->assertEquals(HttpStatusCode::UNPROCESSABLE_ENTITY, $response->getStatusCode());
     }

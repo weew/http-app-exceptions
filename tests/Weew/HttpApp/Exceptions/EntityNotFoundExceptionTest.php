@@ -10,7 +10,7 @@ use Weew\HttpApp\Exceptions\EntityNotFoundException;
 class EntityNotFoundExceptionTest extends PHPUnit_Framework_TestCase {
     public function test_create() {
         $ex = new EntityNotFoundException();
-        $response = $ex->getHttpResponse();
+        $response = $ex->toHttpResponse();
         $this->assertTrue($response instanceof IHttpResponse);
         $this->assertEquals(HttpStatusCode::NOT_FOUND, $response->getStatusCode());
     }

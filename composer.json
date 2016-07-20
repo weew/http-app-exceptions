@@ -1,5 +1,5 @@
 {
-    "name": "weew/php-http-app-exceptions",
+    "name": "weew/http-app-exceptions",
     "description": "Collection of useful exceptions.",
     "license": "MIT",
     "authors": [
@@ -19,8 +19,8 @@
         }
     },
     "require": {
-        "weew/php-http-app": "^2.0",
-        "weew/php-validator": "^3.0"
+        "weew/http-app": "^2.0",
+        "weew/validator": "^3.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^4.7",
