@@ -1,6 +1,6 @@
 {
     "name": "weew/http-app-exceptions",
-    "description": "Collection of useful exceptions.",
+    "description": "Collection of useful http exceptions.",
     "license": "MIT",
     "authors": [
         {
